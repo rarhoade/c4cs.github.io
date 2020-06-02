@@ -1,11 +1,25 @@
+# Archive Status
+
+**Note:** This course has been renamed and renumbered as
+[EECS 201: Computer Science Pragmatics](https://bulletin.engin.umich.edu/courses/eecs/#subnav-1).
+The core of the course remains similar, however, active course development now takes place by the
+new course staff in an internal-to-Michigan gitlab instance.
+
+You are, of course, still welcome to use any of these course materials however they may be useful to you
+([![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) Pat Pannuto).
+
+---
+
 # Computing for Computer Scientists
 
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Build Status](https://travis-ci.org/c4cs/c4cs.github.io.svg?branch=master)](https://travis-ci.org/c4cs/c4cs.github.io)
 
 This repository holds the sources for the course homepage for Computing for Computer Scientists,
 a course for early-career EECS students at the University of Michigan.
 
-For more information, visit the course homepage: [https://c4cs.github.io]()
+For more information, visit the course homepage: [https://c4cs.github.io](https://c4cs.github.io)
+
 
 ## Contributing
 
@@ -26,6 +40,15 @@ $ sudo gem install jekyll bundler
 $ bundle install
 $ bundle exec jekyll serve # serves site at http://127.0.0.1:4000
 ```
+
+If you don't have an Ubuntu computer but know how to use Docker, you can build and run the site like this:
+
+```bash
+$ ./docker-build
+$ ./docker-run # serves site at http://127.0.0.1:4000
+```
+
+This will mount your current directory to the running image, so any changes you make will be reflected by jekyll just like they would if you build and ran the site locally.
 
 For more information on setting up, see [GitHub's guide][gh docs] or [Jekyll's documentation][jekyll docs].
 

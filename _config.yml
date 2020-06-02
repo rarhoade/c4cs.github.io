@@ -27,9 +27,57 @@ collections:
 
 defaults:
   - scope:
-      type: lectures
+      path: "_syllabus/f18"
     values:
-      layout: lecture
+      category: f18
+  - scope:
+      path: "_lectures/f18"
+    values:
+      category: f18
+  - scope:
+      path: "_updates/f18"
+    values:
+      category: f18
+  - scope:
+      path: "_syllabus/w18"
+    values:
+      category: w18
+  - scope:
+      path: "_lectures/w18"
+    values:
+      category: w18
+  - scope:
+      path: "_updates/w18"
+    values:
+      category: w18
+  - scope:
+      path: "_syllabus/f17"
+    values:
+      category: f17
+  - scope:
+      path: "_lectures/f17"
+    values:
+      category: f17
+  - scope:
+      path: "_updates/f17"
+    values:
+      category: f17
+  - scope:
+      path: "_syllabus/w17"
+    values:
+      category: w17
+  - scope:
+      path: "_lectures/w17"
+    values:
+      category: w17
+  - scope:
+      path: "_updates/w17"
+    values:
+      category: w17
+  - scope:
+      path: "_syllabus/f16"
+    values:
+      category: f16
   - scope:
       path: "_lectures/f16"
     values:
@@ -43,25 +91,25 @@ defaults:
     values:
       category: w16
   - scope:
+      type: lectures
+    values:
+      layout: lecture
+  - scope:
       type: syllabus
     values:
       layout: syllabus
   - scope:
-      path: "_syllabus/f16"
+      path: "_lectures/w18"
     values:
-      category: f16
+      category: w18
   - scope:
-      path: "_lectures/w17"
+      path: "_syllabus/w18"
     values:
-      category: w17
+      category: w18
   - scope:
-      path: "_updates/w17"
+      path: "_updates/w18"
     values:
-      category: w17
-  - scope:
-      path: "_syllabus/w17"
-    values:
-      category: w17
+      category: w18
   - scope:
       type: commands
     values:
@@ -70,6 +118,10 @@ defaults:
       path: "_commands/basics"
     values:
       category: basics
+  - scope:
+      path: "_commands/tutorials"
+    values:
+      category: tutorials
   - scope:
       path: "_commands/shells"
     values:
@@ -99,7 +151,7 @@ defaults:
     values:
       category: os_x
 
-command_categories: ["basics", "shells", "scripting", "tools", "editors", "toys", "ubuntu", "os_x"]
+command_categories: ["basics", "tutorials", "shells", "scripting", "tools", "editors", "toys", "ubuntu", "os_x"]
 
 # Build settings
 markdown: kramdown
@@ -115,3 +167,5 @@ markdown_ext: "mkdown,mkdn,mkd,md"
 # Needed for Travis
 exclude: [vendor]
 
+# Needed for Docker builds
+github: [metadata]
